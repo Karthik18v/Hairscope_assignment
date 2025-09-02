@@ -1,0 +1,146 @@
+/* General layout */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+  /* dark background */
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Left & Right Boxes */
+.left-box,
+.right-box {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #444;
+  transition: transform 1s ease-in-out;
+  height: 80vh;
+}
+
+.left-box {
+  text-align: left;
+}
+
+.right-box {
+  text-align: center;
+}
+
+/* Login Circle Box */
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #111;
+  padding: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.login-box h6 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Inputs & Button */
+.password-input {
+  margin: 15px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  width: 80%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-button {
+  padding: 10px 20px;
+  border: none;
+  background: #444;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background: #666;
+}
+
+/* Animations */
+.slide-left {
+  transform: translateX(-100%);
+}
+
+.slide-right {
+  transform: translateX(100%);
+}
+
+.rotate-out {
+  transform: rotateY(720deg) scale(0);
+  opacity: 0;
+}
+
+/* Lab Page */
+.lab-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.lab-page h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.timer-box {
+  font-size: 20px;
+  margin: 15px 0;
+  padding: 12px 25px;
+  border: 2px solid #444;
+  border-radius: 12px;
+  background: #111;
+  display: inline-block;
+}
+
+.exit-button {
+  margin-top: 25px;
+  padding: 12px 30px;
+  border: none;
+  background: #444;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.exit-button:hover {
+  background: #666;
+  transform: scale(1.05);
+}
