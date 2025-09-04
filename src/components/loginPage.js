@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { MdFingerprint } from "react-icons/md";
+import LoginPageImage from "../LoginPageImage.png";
 import "../App.css";
 
 export default function LoginPage() {
-  const [password, setPassword] = useState("");
+  const [password, setPassword] = useState("Karthik");
   const [unlocked, setUnlocked] = useState(false);
   const navigate = useNavigate();
 
@@ -39,10 +41,12 @@ export default function LoginPage() {
       </div>
 
       <div className={`right-box ${unlocked ? "slide-right" : ""}`}>
+        <img src={LoginPageImage} alt="Login Page" className="login-image" />
         <strong>50 mins left out of 60</strong>
       </div>
 
       <div className={`login-box ${unlocked ? "rotate-out" : ""}`}>
+        <MdFingerprint size={100} color="cyan" />
         <h6>Login</h6>
         <label>Enter Your Zincop password</label>
         <input
