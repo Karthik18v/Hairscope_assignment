@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Zincop Labs Interactive Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Zincop Labs is an interactive **React** application that allows users to explore programming labs, track their progress, and access lab exercises through a secure, password-protected login. The platform combines responsive UI design, animations, timers, and routing to provide an engaging learning experience.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+* **Home Page**: Browse a grid of programming skills with interactive icons. Clicking a skill displays a popup with lab information and redirects to the login page. Includes category filtering (Programming, Design, DevOps).
+* **Login Page**: Secure access to labs with a password (`Karthik`). Smooth animations and fingerprint login icon enhance user experience.
+* **Lab Page**: Timer-based lab sessions with a 10-minute countdown. Auto-redirects to the home page when time expires. Manual exit button available.
+* **Responsive UI**: Modern design using CSS Grid, Flexbox, and React Icons for a visually appealing interface.
 
-### `yarn start`
+## Technologies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* React (Functional Components & Hooks)
+* React Router v6 (Page navigation)
+* React Icons (Skill and login icons)
+* CSS / Flexbox / Grid (Layout and animations)
+* Yarn (Package management)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
 
-### `yarn test`
+```
+zincop-labs/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── labPage.js
+│   │   ├── loginPage.js
+│   │   └── mainPage.js
+│   ├── App.js
+│   ├── App.css
+│   └── mainPage.css
+├── package.json
+├── yarn.lock
+└── README.md
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `yarn build`
+```bash
+git clone https://github.com/your-username/zincop-labs.git
+cd zincop-labs
+yarn install
+yarn start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Access the app at [http://localhost:3000](http://localhost:3000).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Open the home page to view available skills.
+2. Click a skill to see a popup with lab path and navigate to the login page.
+3. Enter password `Karthik` to unlock the lab.
+4. Lab page displays a countdown timer; exit early using the "Exit Lab" button if needed.
 
-### `yarn eject`
+## License
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+MIT License
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Notes**: This project uses Yarn. The password is hardcoded for demonstration purposes.
